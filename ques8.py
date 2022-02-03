@@ -1,7 +1,5 @@
-#Python program to check divisibility of a number by 5
+#Python script to print table of user's choice.
 
-number = int(input(" Please Enter any Positive Integer : "))
-if(number % 5 == 0):
-    print("Given Number {0} is Divisible by 5".format(number))
-else:
-    print("Given Number {0} is Not Divisible by 5".format(number))
+n = int(input("Enter a number: "))
+for i in range(1,11):
+   print(n,'x',i,'=',n*i)

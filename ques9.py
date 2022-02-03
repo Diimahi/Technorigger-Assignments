@@ -1,9 +1,11 @@
-# Python program to check if year leap year.
+#Python script to check prime number.
 
-year = 2000
-if (year % 400 == 0) and (year % 100 == 0):
-    print("{0} is a leap year".format(year))
-elif (year % 4 ==0) and (year % 100 != 0):
-    print("{0} is a leap year".format(year))
-else:
-    print("{0} is not a leap year".format(year))
+n=int(input("Enter the number"))
+a=1
+for i in range(2,n):
+    if n%i==0:
+        a=0
+        if a==1:
+            print("number is prime")
+        else:
+            print("number is not prime")

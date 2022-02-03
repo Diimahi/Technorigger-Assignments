@@ -1,8 +1,7 @@
-#Python script to calculate the volume of a cuboid.
+# Python script to print first 10 even naturals numbers.
 
-length = float(input('Please Enter the Length of a Cuboid: '))
-width = float(input('Please Enter the Width of a Cuboid: '))
-height = float(input('Please Enter the Height of a Cuboid: '))
-# Calculate the Volume
-Volume = length * width * height
-print(" The Volume of a Cuboid = %.2f" %Volume);
+maximum = int(input(" Please Enter the Maximum Value : "))
+
+for number in range(1, maximum+1):
+    if(number % 2 == 0):
+        print("{0}".format(number),end=' ')

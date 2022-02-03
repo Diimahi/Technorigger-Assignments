@@ -1,10 +1,15 @@
-#Python script to find nature of roots of a given quadratic equation.
+#Python script to print all armstrong numbers under 1000.
 
-import cmath
-a = 1
-b = 5
-c = 6
-d = (b**2) - (4*a*c)
-sol1 = (-b-cmath.sqrt(d))/(2*a)
-sol2 = (-b+cmath.sqrt(d))/(2*a)
-print('The solution are {0} and {1}'.format(sol1,sol2))
+lower=100
+
+upper = 1000
+for num in range(lower, upper + 1):
+    order = len(str(num))
+    sum = 0
+    temp = num
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** order
+        temp //= 10
+    if num == sum:
+        print(num)

@@ -1,7 +1,5 @@
-# Python program to check the input number is odd or even.
+#Python script to print table of 5.
 
-num = int(input("Enter a number: "))
-if (num % 2) == 0:
-   print("{0} is Even".format(num))
-else:
-   print("{0} is Odd".format(num))
+n = int(input("Enter a number: "))
+for i in range(1,11):
+   print(n,'x',i,'=',n*i)

@@ -1,7 +1,6 @@
-#python script to calculate simple interest.
+# Python script to print first 10 odd natural numbers .
 
-P = float(input("Enter the principal amount : "))
-N = float(input("Enter the number of years : "))
-R = float(input("Enter the rate of interest : "))
-SI = (P * N * R)/100
-print("Simple interest is:", SI)
+maximum = int(input(" Please Enter any Maximum Value : "))
+for number in range(1, maximum + 1):
+    if(number % 2 != 0):
+        print("{0}".format(number),end=' ')

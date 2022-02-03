@@ -1,6 +1,8 @@
-#Python script to calculate the area of a circle.
+#Print first 10 natural numbers in reverse order.
 
-PI=3.14
-r=float(input("Enter the radius of the circle:"))
-area=PI*r*r
-print("Area of the circle is:",area)
+number = int(input("Please Enter any Number: "))
+i = number
+print("List of Natural Numbers from {0} to 1 in Reverse Order : ".format(number))
+while ( i >= 1):
+    print (i, end = '  ')
+    i = i - 1
